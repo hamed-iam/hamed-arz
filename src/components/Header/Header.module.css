@@ -1,0 +1,30 @@
+.container {
+  display: flex;
+  height: 100px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.about {
+  position: relative;
+  padding: 30px;
+  font-weight: 800;
+}
+.logo img {
+  width: 90px;
+  padding: 8px;
+}
+.heading {
+  font-size: 45px;
+  margin-top: 30px;
+  width: 200px;
+  height: 80px;
+
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
