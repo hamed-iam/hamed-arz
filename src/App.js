@@ -1,8 +1,11 @@
 import styles from './App.module.css';
 import Header from './components/Header/Header';
 import Cards from './components/Cards/Cards';
-import { fetchData } from './api';
-import { Component, useEffect, useState } from 'react';
+import { fetchData, fetchJoke } from './api';
+import { Component } from 'react';
+
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import About from './pages/About';
 
 class App extends Component {
   state = {
@@ -18,10 +21,19 @@ class App extends Component {
     const { data } = this.state;
 
     return (
-      <div className="App">
-        <Header />
-        <Cards finalData={data} />
-      </div>
+      <Router>
+        <div className={styles.app}>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Cards finalData={data} />
+            </Route>
+            <Route path="/about">
+              <About />
+            </Route>
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

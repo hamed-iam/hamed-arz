@@ -1,0 +1,25 @@
+body {
+  font-family: roboto, sans-serif;
+  background-color: rgb(215, 230, 250);
+}
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin-top: -500px;
+  height: 10vh;
+  width: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 40px;
+}
+
+.tech img {
+  width: 50px;
+}

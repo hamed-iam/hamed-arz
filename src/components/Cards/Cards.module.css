@@ -5,6 +5,17 @@
 .card {
   margin: 2% !important;
 }
+
+.price {
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+.date {
+  position: relative;
+  bottom: -10px;
+}
+
 @media (max-width: 959px) {
   .card {
     margin: 10px 10% !important;
